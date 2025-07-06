@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Proxy Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Minecraft Server Proxy</h1>
+                <p class="hero-subtitle">Understanding IP Protection & Tunneling</p>
+                <div class="hero-decoration"></div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="card">
+                <h2>Can WebSim Act as a Proxy?</h2>
+                <div class="answer-box">
+                    <div class="status-indicator"></div>
+                    <p><strong>Short Answer:</strong> No, WebSim cannot directly proxy Minecraft server traffic.</p>
+                </div>
+                <p>WebSim is designed for web content simulation, not TCP/UDP tunneling required for Minecraft servers.</p>
+            </section>
+
+            <section class="card">
+                <h2>Technical Challenges</h2>
+                <div class="challenge-grid">
+                    <div class="challenge-item">
+                        <div class="challenge-icon">🔌</div>
+                        <h3>Protocol Mismatch</h3>
+                        <p>Minecraft uses TCP/UDP protocols, while WebSim handles HTTP/WebSocket connections.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Real-time gaming requires low latency that web proxies typically can't provide.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-icon">🔒</div>
+                        <h3>Security</h3>
+                        <p>Proxying game traffic introduces complex security and privacy considerations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Legitimate Alternatives</h2>
+                <div class="alternatives">
+                    <div class="alternative">
+                        <h3>🛡️ Cloudflare Spectrum</h3>
+                        <p>Professional DDoS protection for game servers with TCP/UDP support.</p>
+                    </div>
+                    <div class="alternative">
+                        <h3>🔧 Reverse Proxy Services</h3>
+                        <p>Dedicated gaming proxy services like TCPShield or PlayIt.gg.</p>
+                    </div>
+                    <div class="alternative">
+                        <h3>🌐 VPN Solutions</h3>
+                        <p>Host your server through a VPN to mask the origin IP address.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Why Hide Your Server IP?</h2>
+                <div class="reasons">
+                    <div class="reason">
+                        <span class="reason-icon">🛡️</span>
+                        <span>DDoS Protection</span>
+                    </div>
+                    <div class="reason">
+                        <span class="reason-icon">🔒</span>
+                        <span>Privacy & Security</span>
+                    </div>
+                    <div class="reason">
+                        <span class="reason-icon">📍</span>
+                        <span>Location Anonymity</span>
+                    </div>
+                    <div class="reason">
+                        <span class="reason-icon">⚖️</span>
+                        <span>Professional Hosting</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card experimental">
+                <h2>🧪 Experimental Concept</h2>
+                <p>While not practical, here's how a web-based Minecraft proxy might theoretically work:</p>
+                <div class="flow-diagram">
+                    <div class="flow-item">
+                        <div class="flow-icon">🎮</div>
+                        <span>Minecraft Client</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">
+                        <div class="flow-icon">🌐</div>
+                        <span>WebSocket Bridge</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">
+                        <div class="flow-icon">🔄</div>
+                        <span>Protocol Converter</span>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-item">
+                        <div class="flow-icon">🏠</div>
+                        <span>Minecraft Server</span>
+                    </div>
+                </div>
+                <p class="warning">⚠️ This would introduce significant latency and complexity issues.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Remember: Always use legitimate services for server protection and follow platform terms of service.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
